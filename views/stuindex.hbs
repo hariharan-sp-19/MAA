@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+</head>
+<body onload="mac()">
+<h3 style="float:left">{{login.name}}</h3>
+<h3 style="float:right" id="mac">{{login.mac}}</h3>
+
+<div class="container" style="padding:100px">
+<form action="/studatt" method="post">
+<div class="form-group">
+			<label>Enter pin</label>
+			<input type="text" style="visibility:hidden"  name="mac" value="" id="in">
+			<input type="text" class="form-control" name="pin">
+		</div>
+		<button type="submit" class="btn btn-warning btn-lg">Submit</button>
+		</form>
+</div>
+<script type="text/javascript">
+	function mac(){
+		document.getElementById('in').value = document.getElementById('mac').innerHTML;
+	}
+</script>
+</body>
+</html>

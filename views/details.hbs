@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hackathon</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href="/logout">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Year</th>
+        <th>Section</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each array}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.depart}}</td>
+        <td>{{this.year}}</td>
+        <td>{{this.sec}}</td>
+        <td>{{this.percentage}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Average</title>
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hackathon</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href="/logout">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container">
+<form action="/average" method="post">
+<div class="form-group row">
+  <label class="col-2 col-form-label">Department:</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name="depart">
+  </div>
+</div>
+<div class="form-group row">
+  <label class="col-2 col-form-label">Year:</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name="year">
+  </div>
+</div>
+<div class="form-group row">
+  <label class="col-2 col-form-label">Section:</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name="sec">
+  </div>
+</div>
+<div class="form-group row">
+  <label class="col-2 col-form-label">No of periods:</label>
+  <div class="col-10">
+    <input class="form-control" type="text" name="periods">
+  </div>
+</div>
+<button type="submit" style="float:right" class="btn btn-primary btn-lg">Submit</button>
+</form>
+</div>
+</body>
+</html>
